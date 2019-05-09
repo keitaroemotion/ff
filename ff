@@ -1,0 +1,9 @@
+query=""
+
+for var in ${@}
+do
+    query+="$var*"
+done
+
+echo "query: $query"
+find . -name "$query"
